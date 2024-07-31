@@ -1,0 +1,168 @@
+.calendarCell {
+    display: flex;
+    float: left;
+    height: 40px;
+    width: 45px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px !important;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+}
+
+.yearCalendarCell {
+    display: flex;
+    float: left;
+    height: 80px;
+    width: 94px;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    box-shadow: 0px 0px 0px !important;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+}
+
+.calendarCell.ranged {
+    background: #10217e;
+}
+
+.calendarCell.ranged p {
+    color: #fff;
+}
+
+.selectedDate {
+    width: 100%;
+    border-top: 4px solid;
+    border-bottom: 4px solid;
+    border-left: none;
+    border-right: none;
+}
+
+.selectedDate1 {
+    border-color: #a8d5ff;
+}
+
+.selectedDate2 {
+    border-color: #97c1a9;
+}
+
+.selectedDate3 {
+    border-color: #0984e3;
+}
+
+.selectedDate4 {
+    border-color: #1dd1a1;
+}
+
+.selectedDate5 {
+    border-color: #00cec9;
+}
+
+.selectedDate6 {
+    border-color: #8729ff;
+}
+
+.rangeBg h5 {
+    font-weight: bold;
+}
+
+.rangeBg1 {
+    background-color: #64b4ff !important;
+}
+
+.rangeBg2 {
+    background-color: #97c1a9 !important;
+}
+
+.rangeBg3 {
+    background-color: #0984e3 !important;
+}
+
+.rangeBg4 {
+    background-color: #1dd1a1 !important;
+}
+
+.rangeBg5 {
+    background-color: #00cec9 !important;
+}
+
+.rangeBg6 {
+    background-color: #8729ff !important;
+}
+
+.selectedStart {
+    width: 100%;
+    border-left: 4px solid;
+    border-right: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.selectedStart1 {
+    border-color: #a8d5ff;
+}
+
+.selectedStart2 {
+    border-color: #97c1a9;
+}
+
+.selectedStart3 {
+    border-color: #0984e3;
+}
+
+.selectedStart4 {
+    border-color: #1dd1a1;
+}
+
+.selectedStart5 {
+    border-color: #00cec9;
+}
+
+.selectedStart6 {
+    border-color: #8729ff;
+}
+
+.selectedEnd {
+    width: 100%;
+    border-right: 4px solid;
+    border-left: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.selectedEnd1 {
+    border-color: #a8d5ff;
+}
+
+.selectedEnd2 {
+    border-color: #97c1a9;
+}
+
+.selectedEnd3 {
+    border-color: #0984e3;
+}
+
+.selectedEnd4 {
+    border-color: #1dd1a1;
+}
+
+.selectedEnd5 {
+    border-color: #00cec9;
+}
+
+.selectedEnd6 {
+    border-color: #8729ff;
+}
+
+.calendar-container button {
+    text-transform: capitalize;
+}
+
+.createRange {
+    background-color: #64b4ff !important;
+}
+
+.createRange .MuiInputBase-root {
+    background-color: #fff;
+}

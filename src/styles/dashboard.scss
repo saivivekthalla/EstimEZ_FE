@@ -1,0 +1,59 @@
+// styles.scss
+.flex-grow {
+    flex-grow: 1;
+}
+
+.search-icon-wrapper {
+    color: black;
+}
+
+.custom-box {
+    width: 100%;
+
+    &> :not(style) {
+        margin: 16px;
+        /* You can adjust the margin value as needed */
+    }
+}
+
+.appCard-custom-box {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 23px;
+    /* You can adjust the gap value as needed */
+}
+
+// styles.scss
+
+.card-item {
+    width: 150px;
+}
+
+.grey-bg {
+    background-color: #eeeeee;
+    /* Replace this color with your desired grey color */
+}
+
+.white-bg {
+    background-color: #ffffff;
+    /* Replace this color with your desired white color */
+}
+
+// styles.scss
+
+.card-content {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: center;
+}
+
+.custom-button {
+    color: black;
+    font-size: 0.75rem;
+    font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}

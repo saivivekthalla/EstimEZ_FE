@@ -1,0 +1,87 @@
+.custom-appbar {
+    box-shadow: none !important;
+    margin-left: 3rem !important;
+    z-index: 2 !important;
+}
+
+.app-custom-toolbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.sidebar-flex-box {
+    display: flex;
+}
+
+.sidebar-inner-box {
+    padding: 8px;
+}
+
+.custom-menu {
+    margin-top: 45px;
+    /* Additional styles for the custom menu if needed */
+}
+
+.custom-drawer {
+    z-index: 0;
+}
+
+.custom-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 8px;
+}
+
+.no-underline{
+    text-decoration: none;
+}
+
+.custom-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.list-item-button {
+    min-height: 48px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.list-item-submenu{
+    padding-left: 30px;
+}
+
+
+.button-initial {
+    justify-content: initial
+}
+
+.button-center {
+    justify-content: center
+}
+
+.layout-box-styled {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.layout-main-box-styled {
+    flex-grow: 1;
+    height: 100vh;
+    overflow: auto;
+}
+
+.no-under-line {
+    text-decoration: none !important;
+}

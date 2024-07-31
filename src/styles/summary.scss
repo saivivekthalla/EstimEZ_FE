@@ -1,0 +1,25 @@
+/* width */
+::-webkit-scrollbar {
+    width: 0.6rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #2E42A633;
+    border-radius: 0.6rem;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: .25rem;
+    // Additional styles you requested
+    background-color: #2E42A680;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.15rem 0.25rem rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2E42A680;
+  }

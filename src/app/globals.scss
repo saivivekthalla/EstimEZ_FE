@@ -1,0 +1,560 @@
+/* styles/styles.css */
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import '../styles/createInfo.scss';
+@import '../styles/dashboard.scss';
+@import '../styles/sidebar.scss';
+@import '../styles/info.scss';
+@import '../styles/projectList.scss';
+@import '../styles/summary.scss';
+
+* {
+  margin: 0;
+}
+
+@layer utilities {
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+}
+
+@layer base {
+  img {
+    @apply inline-block;
+  }
+}
+
+.summary-container {
+  .summary-btn-group {
+      padding: 5px;
+    button {
+      border: none !important;
+      background: transparent;
+      text-transform: capitalize;
+
+      &.btn-active {
+          background: #01105f;
+          border-radius: 15px;
+        }
+      }
+
+    .info-tooltip {
+      margin-top: 10px;
+      margin-left: 15px;
+      // position: absolute;
+      // right: 0;
+    }
+  }
+
+    .tabs-vertical {
+      .tab-root {
+        padding-left: 5px;
+  
+        &.selected {
+          background-color: rgba(176, 159, 255, .251) !important;
+          border: none;
+         
+          .vertical-container {
+            color: #fff;
+            background-color: #1b0066d9;
+            margin: 15px 0px 15px 7px;
+            width: 150px;
+  
+            &.discover {
+              background-image: url("/assets/tab-bg/discover.png");
+            }
+  
+            &.concieve {
+              background-image: url("/assets/tab-bg/concieve.png");
+            }
+  
+            &.build {
+              background-image: url("/assets/tab-bg/build.png");
+            }
+  
+          }
+        }
+      }
+    }
+
+  .mini-card {
+    // background: #0984E380;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 130px;
+    border-radius: 15px;
+
+    p {
+      font-size: 14px !important;
+      margin-top: 10px;
+    }
+
+    p:last-child {
+      font-size: 14px;
+      color: #fff !important;
+      margin-top: 0 !important;
+    }
+  }
+
+  .mini-card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 130px;
+  }
+
+  .resource-table-container {
+    min-height: 300px;
+
+    th,
+    td {
+      font-size: 10px !important;
+      padding: 5px;
+    }
+
+    th {
+      color: #00000099;
+    }
+
+    th {
+      color: #2b205f;
+      font-weight: 600;
+    }
+  }
+
+  .effort-estimation-summary {
+    table {
+      margin: 20px;
+
+      tr {
+        td {
+          .effort-section {
+            border-left: 4px solid #8a79f3;
+            margin-bottom: 15px;
+
+            p {
+              padding-left: 10px;
+
+              &:first-child {
+                font-size: 12px;
+              }
+
+              &:last-child {
+                font-size: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .recharts-legend-item {
+    display: block !important;
+  }
+
+  .recharts-default-legend {
+    margin-left: 20px !important;
+    height: 100px;
+    overflow-y: auto;
+    font-size: 12px;
+    text-align: left !important;
+  }
+
+  .resource-table {
+    p:first-child {
+      color: #1b0066;
+      font-size: 12px;
+      font-weight: 600;
+      display: inline;
+    }
+
+    p:last-child {
+      display: inline;
+      color: #1b0066;
+      font-size: 10px;
+      padding-left: 5px;
+    }
+  }
+
+  .project-info {
+    padding: 30px 30px;
+    border-radius: 15px;
+    background: #2b205f;
+    background-image: url("../css-images/amico.png");
+    background-size: 150px 150px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    p {
+        color: #fff;     
+        word-break: break-all;
+    
+        &:first-child {
+          font-size: 16px;
+          font-weight: 400;
+        }
+    
+        &:last-child {
+          font-size: 10px;
+          font-weight: 300;
+        }
+      }
+  }
+
+  .resource-appoach-section {
+    .active-approach {
+      table {
+        background-color: rgba(46, 66, 166, 0.85);
+        border-radius: 10px;
+
+        tr {
+          td {
+            &.approach-text {
+              p {
+                &:first-child {
+                  font-weight: 600;
+                  color: #fff;
+                }
+              }
+            }
+
+            padding: 10px;
+
+            p {
+              font-size: 12px !important;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+
+    table {
+      tr {
+        td {
+          // &:first-child {
+          //   border-top-left-radius: 10px;
+          //   border-bottom-left-radius: 10px;
+          // }
+
+          // &:last-child {
+          //   border-top-right-radius: 10px;
+          //   border-bottom-right-radius: 10px;
+          // }
+          &.approach-text {
+            p {
+              &:first-child {
+                font-weight: 600;
+                color: rgba(27, 0, 102, 0.8);
+              }
+            }
+          }
+
+          padding: 10px;
+
+          p {
+            font-size: 12px !important;
+            // color: #fff;
+          }
+        }
+      }
+
+      // th {
+      //   color: #00000099;
+      // }
+
+      // th {
+      //   color: #2b205f;
+      //   font-weight: 600;
+      // }
+    }
+  }
+
+  .price-list-container {
+      p {
+        font-size: 12px !important;
+        margin-bottom: 5px;
+
+        &:first-child {
+          color: #85fff8;
+        }
+
+        &:last-child {
+          color: #efff8a;
+        }
+    }
+  }
+
+  .c-section-1 {
+    background-image: url("../css-images/Rectangle\ 59.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    .tab-btn {
+        font-size: 12px;
+        text-transform: capitalize;
+        color: #ffffff99;
+        padding: 0 !important;
+        min-height: 30px !important;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    
+        &:hover {
+          color: #ffffff;
+        }
+    
+        &.active {
+          color: #ffffff;
+          border-bottom: 2px solid rgba(227, 241, 61, 0.81);
+        }
+      }         
+  }
+
+  .c-section-2 {
+    background-image: url("../css-images/Rectangle\ 60.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .total-cost {
+    background: #2b205f;
+    border-radius: 10px;
+
+    p {
+      color: rgba(139, 241, 255, 0.8);
+      font-size: 14px;
+      text-align: center;
+      font-weight: 500;
+    }
+
+    .price {
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      text-align: center;
+      align-items: center;
+      margin-top: 10px;
+
+      p {
+        color: #fff !important;
+        font-weight: bold;
+        padding-left: 5px;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .profit-margin-container {
+    .price-percentage {
+      background-image: url("../css-images/hula-hoop\ 1.png");
+      background-size: 80px;
+      height: 80px;
+      background-repeat: no-repeat;
+      p {
+        padding: 28px 12px;
+        font-weight: bold;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .total-cost-container {
+    background-color: rgba(46, 66, 166, 0.83);
+    border-radius: 20px;
+
+    background-image: url('../css-images/escudo-bg.png');
+    background-repeat: no-repeat;
+    background-size: 60px;
+    background-position: left top;
+    display: flex;
+
+    .MuiCardContent-root {
+      text-align: center;
+      width: 100%;
+
+      p {
+        margin-bottom: 15px;
+
+        &:first-child {
+          color: #fff;
+          font-size: 14px;
+          font-weight: bold;
+        }
+
+        &:nth-child(2) {
+          color: rgba(255, 255, 255, 0.6);
+          font-size: 12px;
+        }
+      }
+
+      button {
+        // width: 200px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        &:hover {
+          background-color: #fff;
+        }
+
+        span {
+          color: #000000;
+          font-size: 16px;
+          padding-left: 10px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .MuiTabs-root {
+    min-height: 40px !important;
+  }
+}
+
+// ------------------------
+
+.title-bar {
+  background-color: #9340a0;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 10px;
+  border-bottom-left-radius: 30px;
+  margin-bottom: 10px;
+  position: relative;
+
+  p,
+  h6 {
+    color: #fff;
+    // font-weight: 600;
+  }
+
+  button {
+    color: #fff;
+  }
+}
+
+@media (min-width: 600px) {
+  .MuiToolbar-root {
+    min-height: 40px !important;
+    padding: 0 !important;
+  }
+}
+
+// ------------------------
+#infoBg {
+  background: rgba(43, 32, 95, 0.95);
+  border-radius: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  #infoC {
+    background-image: url("../css-images/amico.png");
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
+
+  // input,
+  .MuiInputBase-root,
+  .MuiFormControl-root,
+  .MuiSelect-select .MuiAutocomplete-input {
+    background-color: rgba(28, 22, 68, 0.94);
+    border-radius: 5px;
+    border: 3px solid #0C2461;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    color: white;
+  }
+
+  .MuiAutocomplete-root .MuiAutocomplete-tag {
+    background: white;
+  }
+
+  .form-label {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    label {
+      font-weight: 600;
+      color: white;
+      font-family: sans-serif;
+      font-style: normal;
+    }
+  }
+
+  .select-color.MuiFormLabel-root-MuiInputLabel-root {
+    color: #ffffff9c;
+  }
+
+  button#createButton,
+  button.resource-btn,
+  button.estimation-btn {
+    background-color: #01105f !important;
+    color: #fff;
+    text-transform: capitalize;
+
+    &:hover {
+      background-color: #01105f !important;
+      color: #fff;
+      opacity: 0.9;
+    }
+  }
+
+  .icon-button {
+    background-color: #fff !important;
+    margin-left: 10px !important;
+    padding: 0 !important;
+
+    &:hover {
+      background-color: #fff !important;
+    }
+  }
+
+  p {
+    word-wrap: break-word;
+  }
+}
+
+// ------------------------
+.project-container {
+  .project {
+    border-radius: 25px;
+
+    &-content {
+      min-height: 100px;
+      padding: 20px;
+      background: rgba(46, 66, 166, 0.85);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  button {
+    background-color: #01105f !important;
+    text-transform: capitalize;
+  }
+
+}
